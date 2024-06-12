@@ -32,12 +32,39 @@ final class CurrencyViewModel: ObservableObject {
             }
         }
     }
+    private func areDatesSameDay(date1: Date, date2: Date) -> Bool {
+        let calendar = Calendar.current
+        let components1 = calendar.dateComponents([.year, .month, .day], from: date1)
+        let components2 = calendar.dateComponents([.year, .month, .day], from: date2)
+        
+        return components1.year == components2.year &&
+               components1.month == components2.month &&
+               components1.day == components2.day
+    }
     private func fetchData() async {
         let (loadedData, lastUpdated) = UserDefaultsManager.shared.loadData()
         if let data = loadedData,
            let updated = lastUpdated {
-            await MainActor.run {
-                self.result = data
+            let now = Date()
+            if areDatesSameDay(date1: now, date2: updated) {
+                
+                
+                await MainActor.run {
+                    self.result = data
+                }
+            } else {
+                let response = await httpManager.fetchData()
+                switch response {
+                case .success(let data) :
+                    await MainActor.run {
+                        self.result = data.rates
+                        if let res = self.result {
+                            UserDefaultsManager.shared.saveData(res)
+                        }
+                    }
+                case .failure(let error) :
+                    print(error.errorDescription)
+                }
             }
         } else {
             
