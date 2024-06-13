@@ -41,6 +41,7 @@ struct Provider: AppIntentTimelineProvider {
 
 struct currencyRateWidgetEntryView : View {
     @Environment(\.widgetFamily) var family: WidgetFamily
+    
     var entry: Provider.Entry
     @State var price: Double = 1.0
     var body: some View {
@@ -49,19 +50,13 @@ struct currencyRateWidgetEntryView : View {
                 .bold()
             Text("\(price * entry.currencyRate) \(entry.currency.flag ?? "") \(entry.currency.name) \(entry.currency.currencyName)")
                 HStack {
-                    Button {
-                        price = 1000
-                    } label: {
+                    Button(intent: insertNumberIntent()) {
                         Text("1,000원")
                     }
-                    Button {
-                        price = 3000
-                    } label: {
+                    Button(intent: insertNumberIntent()) {
                         Text("3,000원")
                     }
-                    Button {
-                        price = 5000
-                    } label: {
+                    Button(intent: insertNumberIntent()) {
                         Text("5,000원")
                     }
             }

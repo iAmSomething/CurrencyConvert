@@ -42,4 +42,10 @@ class UserDefaultsManager {
     func fetchCountry() -> [String] {
         return userDefaults?.array(forKey: "starredCurrency") as? [String] ?? []
     }
+    func currentResult() -> Int {
+        return userDefaults?.integer(forKey: "currentResult") ?? 0
+    }
+    func setCurrentResult(num: Int) {
+        userDefaults?.setValue(num, forKey: "currentResult")
+    }
 }

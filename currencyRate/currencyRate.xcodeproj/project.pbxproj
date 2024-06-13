@@ -26,6 +26,8 @@
 		DA1674102C11F01D00B2073A /* HTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4582B2C117CAE009C4DCB /* HTTPRequest.swift */; };
 		DA1674112C11F02A00B2073A /* APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF458262C117709009C4DCB /* APIProtocol.swift */; };
 		DA1674122C11F05500B2073A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF4582F2C11A5F8009C4DCB /* Extensions.swift */; };
+		DA813FD72C19DC4D0048DCEF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA813FD62C19DC4D0048DCEF /* Calculator.swift */; };
+		DA813FD82C19DC520048DCEF /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA813FD62C19DC4D0048DCEF /* Calculator.swift */; };
 		DABC47CF2C11736800FC135F /* currencyRateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC47CE2C11736800FC135F /* currencyRateApp.swift */; };
 		DABC47D12C11736800FC135F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DABC47D02C11736800FC135F /* ContentView.swift */; };
 		DABC47D32C11736A00FC135F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DABC47D22C11736A00FC135F /* Assets.xcassets */; };
@@ -98,6 +100,7 @@
 		DA16740A2C11ECE500B2073A /* CurrencyEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyEntry.swift; sourceTree = "<group>"; };
 		DA1674132C11F61300B2073A /* currencyRate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = currencyRate.entitlements; sourceTree = "<group>"; };
 		DA1674142C11F63E00B2073A /* currencyRateWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = currencyRateWidgetExtension.entitlements; sourceTree = "<group>"; };
+		DA813FD62C19DC4D0048DCEF /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
 		DABC47CB2C11736800FC135F /* currencyRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = currencyRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABC47CE2C11736800FC135F /* currencyRateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currencyRateApp.swift; sourceTree = "<group>"; };
 		DABC47D02C11736800FC135F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +172,7 @@
 				DA1673F62C11E5E100B2073A /* currencyRateWidgetBundle.swift */,
 				DA1673F82C11E5E100B2073A /* currencyRateWidgetLiveActivity.swift */,
 				DA1673FA2C11E5E100B2073A /* currencyRateWidget.swift */,
+				DA813FD62C19DC4D0048DCEF /* Calculator.swift */,
 				DA16740A2C11ECE500B2073A /* CurrencyEntry.swift */,
 				DA1673FC2C11E5E100B2073A /* AppIntent.swift */,
 				DA1673FE2C11E5E200B2073A /* Assets.xcassets */,
@@ -418,6 +422,7 @@
 				DA16740E2C11ECE500B2073A /* CurrencyEntry.swift in Sources */,
 				DA1673FD2C11E5E100B2073A /* AppIntent.swift in Sources */,
 				DA16740F2C11F00500B2073A /* Userdefaults.swift in Sources */,
+				DA813FD82C19DC520048DCEF /* Calculator.swift in Sources */,
 				DA1674092C11EC9000B2073A /* Model.swift in Sources */,
 				DA1674102C11F01D00B2073A /* HTTPRequest.swift in Sources */,
 				DA1673F72C11E5E100B2073A /* currencyRateWidgetBundle.swift in Sources */,
@@ -436,6 +441,7 @@
 				DAF458272C117709009C4DCB /* APIProtocol.swift in Sources */,
 				DAF458322C11A949009C4DCB /* SettingView.swift in Sources */,
 				DAF458302C11A5F8009C4DCB /* Extensions.swift in Sources */,
+				DA813FD72C19DC4D0048DCEF /* Calculator.swift in Sources */,
 				DABC47D12C11736800FC135F /* ContentView.swift in Sources */,
 				DAF4582C2C117CAE009C4DCB /* HTTPRequest.swift in Sources */,
 				DA1673EA2C11E03F00B2073A /* ModalSubView.swift in Sources */,

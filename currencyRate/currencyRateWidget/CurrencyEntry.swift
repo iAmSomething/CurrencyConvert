@@ -18,7 +18,6 @@ struct CurrencyEntry: TimelineEntry {
         self.date = date ?? Date()
         if let krw = currentRate?["KRW"],
            let base = currentRate?[currency.id] {
-            
             self.currencyRate = krw / base
         }
         else {
